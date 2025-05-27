@@ -68,7 +68,7 @@ export default function CreateExpenseScreen() {
           text: "OK",
           onPress: () => {
             resetForm();
-            router.replace("/(tabs)");
+            router.replace("/expenses");
           },
         },
       ]);
@@ -216,7 +216,7 @@ export default function CreateExpenseScreen() {
 
               <TouchableOpacity
                 className="py-3 rounded-full border border-gray-300 bg-white"
-                onPress={() => router.replace("/(tabs)")}
+                onPress={() => router.replace("/expenses")}
                 disabled={createExpenseMutation.isPending}
               >
                 <Text className="text-gray-700 text-center font-semibold text-lg">

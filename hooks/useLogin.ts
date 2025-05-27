@@ -62,7 +62,7 @@ export const useLogin = () => {
       Alert.alert("Success", "Login successful!", [
         {
           text: "OK",
-          onPress: () => router.replace("/(tabs)"),
+          onPress: () => router.replace("/expenses"),
         },
       ]);
       return true;

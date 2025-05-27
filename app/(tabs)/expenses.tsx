@@ -54,7 +54,7 @@ export default function ExpensesListScreen() {
 
   const formatDate = (dateString: string): string => {
     try {
-      if (!dateString) return "No date givenr";
+      if (!dateString) return "No date given";
       return new Date(dateString).toLocaleDateString("en-US", {
         month: "short",
         day: "numeric",

@@ -226,7 +226,7 @@ export default function ProfileScreen() {
                     {expenses.length > 5 && (
                       <TouchableOpacity
                         className="mt-3 py-2"
-                        onPress={() => router.replace("/(tabs)")}
+                        onPress={() => router.replace("/expenses")}
                       >
                         <Text className="text-blue-500 text-center font-medium">
                           View All Expenses
@@ -274,7 +274,7 @@ export default function ProfileScreen() {
 
           <TouchableOpacity
             className="bg-green-500 p-4 rounded-xl flex-row items-center mb-3"
-            onPress={() => router.replace("/(tabs)")}
+            onPress={() => router.replace("/expenses")}
           >
             <Ionicons name="list" size={24} color="white" />
             <Text className="text-white font-semibold text-lg ml-3">
